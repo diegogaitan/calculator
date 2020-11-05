@@ -11,6 +11,8 @@ The file `.tool-versions` for [asdf](https://github.com/asdf-vm/asdf) contains t
 Through the `Calculator` module to call the `Boundary` that wraps the non-OTP service process logic:
 
 ```elixir
+iex(1)> calculator = Calculator.start(0)
+#PID<0.141.0>
 iex(2)> Calculator.add(calculator, 10)
 {:add, 10}
 iex(3)> Calculator.subtract(calculator, 3)
